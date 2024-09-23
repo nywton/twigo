@@ -7,6 +7,19 @@
   <meta property="og:image" content="https://twigo.com.br/images/logo.png">
   <meta property="og:image:type" content="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    /* Main banner list font */
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+    body {
+      font-family: "Architects Daughter", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body>
@@ -59,7 +72,7 @@
 
   <!-- MainBanner -->
   <section class="bg-white">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl py-2 lg:py-20 relative">
+    <div class="px-4 md:pt-16 lg:pt-24 mx-auto max-w-screen-xl py-2 relative">
       <!-- Desktop main banner -->
       <div
         class="hidden md:block absolute z-10 top-0 right-0 h-full w-80 md:w-3/4 bg-no-repeat bg-contain bg-right flex items-center opacity-50 lg:opacity-100"
@@ -67,12 +80,14 @@
 
       </div>
       <!-- / Desktop main banner -->
-       <!-- Mobile Banner -->
+
       <div class="rounded-lg p-4 md:p-8 md:p-12 mb-8 z-20 flex flex-col md:relative md:text-left md:items-start">
-        <img src="./images/product_explainer.svg" class="md:hidden h-40 mb-2" alt="Twigo Banner"/>
-        <h1 class="text-gray-900 text-3xl md:text-5xl font-extrabold mb-4 text-center">Nós vamos dar vida à sua ideia
+        <!-- Mobile Banner -->
+        <img src="./images/product_explainer.svg" class="md:hidden h-40 mb-2" alt="Twigo Banner" />
+        <!-- / Mobile Banner -->
+        <h1 class="text-gray-900 text-3xl md:text-5xl font-extrabold mb-4 text-center blokletters">Nós vamos dar vida à sua ideia
           inovadora</h1>
-        <p class="hidden md:block text-lg font-normal text-gray-600 mb-8">Somos uma equipe de engenheiros que
+        <p class="hidden md:block text-lg font-normal text-gray-600 blokletters mb-8">Somos uma equipe de engenheiros que
           transforma suas ideias em soluções tecnológicas,
           <br> seja por meio da criação de softwares ou da otimização de processos.
         </p>
@@ -85,32 +100,27 @@
                 </path>
               </symbol>
               <use xlink:href="#ai:ph:check-circle-fill"></use>
-            </svg> <span class="text-sm">Criação de sites, aplicativos e wireframes</span>
+            </svg> <span class="text-lg blokletters text-gray-500">Criação de sites e aplicativos</span>
           </li>
           <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
               class="w-5 h-5" data-icon="ph:check-circle-fill">
               <use xlink:href="#ai:ph:check-circle-fill"></use>
-            </svg> <span class="text-sm">Colaboração em tempo real</span> </li>
+            </svg> <span class="text-lg blokletters text-gray-500">Colaboração em tempo real</span> </li>
           <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
               class="w-5 h-5" data-icon="ph:check-circle-fill">
               <use xlink:href="#ai:ph:check-circle-fill"></use>
-            </svg> <span class="text-sm">Segurança e privacidade</span>
+            </svg> <span class="text-lg blokletters text-gray-500">Segurança e privacidade</span>
           </li>
           <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
-            class="w-5 h-5" data-icon="ph:check-circle-fill">
-            <use xlink:href="#ai:ph:check-circle-fill"></use>
-          </svg> <span class="text-sm">Tradução de jogos</span>
-        </li>
-          <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
               class="w-5 h-5" data-icon="ph:check-circle-fill">
               <use xlink:href="#ai:ph:check-circle-fill"></use>
-            </svg> <span class="text-sm">Consultoria para Startups</span>
+            </svg> <span class="text-lg blokletters text-gray-500">Consultoria para Startups</span>
           </li>
         </ul>
 
 
         <!-- buttons  -->
-        <div class="flex gap-2">
+        <div class="flex gap">
           <button type="button"
             class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2"
             onclick="window.location.href='https://wa.me/5582981473311?text=Olá'">
