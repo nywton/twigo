@@ -57,7 +57,7 @@
 
   <!-- MainBanner -->
   <section class="bg-white">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-28 relative">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-20 relative">
       <!-- Desktop main banner -->
       <div
         class="hidden md:block absolute z-10 top-0 right-0 h-full w-80 md:w-3/4 bg-no-repeat bg-contain bg-right flex items-center opacity-50 lg:opacity-100"
@@ -67,24 +67,54 @@
       <!-- / Desktop main banner -->
       <div class="rounded-lg p-4 md:p-8 md:p-12 mb-8 z-20 flex flex-col md:relative items-center md:items-start">
         <h1 class="text-gray-900 text-2xl md:text-5xl font-extrabold mb-4">Nós damos vida à sua ideia inovadora { }</h1>
-        <p class="hidden md:block text-lg font-normal text-gray-600 mb-16">Somos uma equipe de engenheiros que
+        <p class="hidden md:block text-lg font-normal text-gray-600 mb-8">Somos uma equipe de engenheiros que
           transforma suas ideias em soluções tecnológicas,
           <br> seja por meio da criação de softwares ou da otimização de processos.
         </p>
         <p class="md:hidden text-lg font-normal text-gray-600 mb-8 md:mb-16">Somos uma equipe de engenheiros que
           transforma suas ideias em soluções tecnológicas.</p>
+        <ul class="grid text-left gap-y-4 text-2xl text-gray-600 mb-12">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <svg width="1em" height="1em" viewBox="0 0 256 256" class="w-5 h-5" data-icon="ph:check-circle-fill">
+              <symbol id="ai:ph:check-circle-fill">
+                <path fill="#6c63ff"
+                  d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m45.66 85.66l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32">
+                </path>
+              </symbol>
+              <use xlink:href="#ai:ph:check-circle-fill"></use>
+            </svg> <span class="text-sm">Criação de site, aplicativos e wireframes</span>
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
+              class="w-5 h-5" data-icon="ph:check-circle-fill">
+              <use xlink:href="#ai:ph:check-circle-fill"></use>
+            </svg> <span class="text-sm">Colaboração em tempo real</span> </li>
+          <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
+              class="w-5 h-5" data-icon="ph:check-circle-fill">
+              <use xlink:href="#ai:ph:check-circle-fill"></use>
+            </svg> <span class="text-sm">Segurança e privacidade</span> 
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800"> <svg width="1em" height="1em" viewBox="0 0 256 256"
+            class="w-5 h-5" data-icon="ph:check-circle-fill">
+            <use xlink:href="#ai:ph:check-circle-fill"></use>
+          </svg> <span class="text-sm">Consultoria gratuita para Startups</span> 
+        </li>
+        </ul>
 
-        <img src="./images/product_explainer.svg" class="md:hidden w-70 mb-16" alt="Twigo Banner" />
+        <img src="./images/product_explainer.svg" class="md:hidden w-70 mb-8" alt="Twigo Banner" />
 
 
         <!-- buttons  -->
         <div class="flex gap-2 items-stretch">
-          <a href="https://wa.me/5582981473311?text=Olá" target="_blank" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
+          <button type="button"
+            class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2"
+            onclick="window.location.href='https://wa.me/5582981473311?text=Olá'">
             <img class="w-5 h-5 me-2 -ms-1" src="./images/icons/whatsapp.png" alt="">
             Whatsapp
-          </a>
+          </button>
 
-          <button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2">Saiba Mais</button>
+          <a href="#section-sobre"
+            class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2">Saiba
+            Mais</a>
         </div>
         <!-- / buttons -->
       </div>
@@ -168,39 +198,40 @@
   </section>
   <!-- /Clients -->
 
-    <!-- Sobre -->
-    <section id="section-sobre" class="bg-white">
-      <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 flex flex-col">
-        <h2
+  <!-- Sobre -->
+  <section id="section-sobre" class="bg-white">
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 flex flex-col">
+      <h2
         class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
         Sobre</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <img src="./images/about-us.svg" class="md:w-70 mb-16" alt="Twigo Banner" />
-          <div>
-            <h2
-          class="mb-4 lg:mb-4 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
-          Quem Somos</h2>
-            <p class="text-xl text-gray-600 mb-8 md:mb-16">
-              Twigo é uma software house 100% remota, fundada em 2020, com o propósito de impulsionar empresas a otimizar seus processos por meio de soluções tecnológicas inovadoras.
-            </p>
-            <h2
-          class="mb-4 lg:mb-4 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
-          Por que existimos?</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <img src="./images/about-us.svg" class="md:w-70 mb-16" alt="Twigo Banner" />
+        <div>
+          <h2
+            class="mb-4 lg:mb-4 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
+            Quem Somos</h2>
+          <p class="text-xl text-gray-600 mb-8 md:mb-16">
+            Twigo é uma software house 100% remota, fundada em 2020, com o propósito de impulsionar empresas a otimizar
+            seus processos por meio de soluções tecnológicas inovadoras.
+          </p>
+          <h2
+            class="mb-4 lg:mb-4 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
+            Por que existimos?</h2>
           <p class="text-xl text-gray-600 mb-8 md:mb-16">
             Para espalhar uma forma de fazer engenharia de software mais humana e eficiente.
           </p>
           <h2
-          class="mb-4 lg:mb-4 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
-          Nossos Valores</h2>
+            class="mb-4 lg:mb-4 text-2xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-3xl">
+            Nossos Valores</h2>
           <ul class="text-xl text-gray-600 mb-8 md:mb-16">
             <li>Empatia: Colocamos as necessidades dos outros em primeiro lugar, entendendo suas perspectivas.</li>
             <li>Adaptabilidade: Estamos sempre prontos para mudar e nos ajustar às novas circunstâncias.</li>
             <li>Colaboração: Acreditamos que o trabalho em equipe gera resultados melhores</li>
           </ul>
-          </div>
         </div>
-    </section>
-    <!-- /Sobre -->
+      </div>
+  </section>
+  <!-- /Sobre -->
 
   <!-- Stack -->
   <section class="bg-white">
